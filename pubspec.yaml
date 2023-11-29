@@ -38,6 +38,9 @@ dependencies:
   rive: ^0.11.4
   flutter_svg: ^2.0.8
   google_fonts: ^6.1.0
+  dio: ^5.3.4
+  shared_preferences: ^2.2.2
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
