@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:never_lost/constansts.dart';
+import 'package:never_lost/constants/constansts.dart';
 import 'package:never_lost/screens/home/components/family_finder_button.dart';
 import 'package:never_lost/screens/home/components/report_button.dart';
 

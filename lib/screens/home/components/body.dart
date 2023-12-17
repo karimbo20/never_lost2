@@ -5,7 +5,7 @@ import 'package:never_lost/screens/home/components/missing_people.dart';
 import 'package:never_lost/screens/home/components/plus_button.dart';
 import 'package:never_lost/screens/home/components/title_with_more_btn.dart';
 import 'package:never_lost/screens/home/components/title_with_more_btn_2.dart';
-import 'package:never_lost/constansts.dart';
+import 'package:never_lost/constants/constansts.dart';
 
 class Body extends StatelessWidget {
   @override

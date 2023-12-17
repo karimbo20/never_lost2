@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:never_lost/nav%20bar/navBar.dart';
 import 'package:never_lost/screens/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -16,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       elevation: 0,
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/menu.svg"),
-        onPressed: () {},
+        onPressed: () => Get.to(() => NavBar()),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:never_lost/constansts.dart';
+import 'package:never_lost/constants/constansts.dart';
 
 class Button extends StatelessWidget {
   const Button(

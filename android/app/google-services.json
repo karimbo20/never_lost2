@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158575287903",
+    "project_id": "never-lost-d406c",
+    "storage_bucket": "never-lost-d406c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158575287903:android:89312459112cca1594c5ea",
+        "android_client_info": {
+          "package_name": "com.example.never_lost"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXoZ52W9fqGlhfEddAm0AY1Bf7Fgjohvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

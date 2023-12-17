@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:never_lost/constansts.dart';
+import 'package:never_lost/constants/constansts.dart';
 import 'package:never_lost/screens/details/details_1_screen.dart';
 import 'package:never_lost/screens/home/components/header_with_searchbox.dart';
 import 'package:never_lost/screens/home/components/title_with_more_btn.dart';
