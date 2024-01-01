@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:never_lost/constants/constansts.dart';
-import 'package:never_lost/screens/family_screen.dart';
+import 'package:never_lost/screens/family_page/family_screen.dart';
 
 class TitleWithMoreBtn2 extends StatelessWidget {
   const TitleWithMoreBtn2({

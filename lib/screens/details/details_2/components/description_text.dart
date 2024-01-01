@@ -1,32 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:never_lost/constants/constansts.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
 class DescriptionText extends StatelessWidget {
   const DescriptionText({
-    super.key,
+    Key? key,
     required this.size,
-  });
+  }) : super(key: key);
 
   final Size size;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        // Assuming DetailImage is the widget
-        SizedBox(height: 20), // Adjust the spacing as needed
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.blue), // Add a blue border
+        borderRadius: BorderRadius.circular(
+            10), // Optional: Add border radius for rounded corners
+      ),
+      padding: EdgeInsets.all(kDefaultPadding),
+      child: Column(
+        children: <Widget>[
+          SizedBox(height: 20),
+          Row(
             children: <Widget>[
               RichText(
                 text: TextSpan(
@@ -34,7 +29,9 @@ class DescriptionText extends StatelessWidget {
                     TextSpan(
                       text: "Ahmed Yassin\n",
                       style: Theme.of(context).textTheme.headline4?.copyWith(
-                          color: kTextColor, fontWeight: FontWeight.bold),
+                            color: kTextColor,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -43,19 +40,16 @@ class DescriptionText extends StatelessWidget {
               Text(
                 "show map",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15,
                   color: kPrimaryColor,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(height: 10), // Add some space between lines
+              SizedBox(height: 10),
             ],
           ),
-        ),
-        SizedBox(height: 10), // Adjust the spacing as needed
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
+          SizedBox(height: 10),
+          Row(
             children: <Widget>[
               RichText(
                 text: TextSpan(
@@ -63,9 +57,9 @@ class DescriptionText extends StatelessWidget {
                     TextSpan(
                       text: "Gender\n",
                       style: Theme.of(context).textTheme.headline4?.copyWith(
-                          fontSize: 25,
-                          color: kTextColor,
-                          fontWeight: FontWeight.w600),
+                            color: kTextColor,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -74,19 +68,16 @@ class DescriptionText extends StatelessWidget {
               Text(
                 "Male",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15,
                   color: kTextColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10), // Add some space between lines
+              SizedBox(height: 10),
             ],
           ),
-        ),
-        SizedBox(height: 10), // Adjust the spacing as needed
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
+          SizedBox(height: 10),
+          Row(
             children: <Widget>[
               RichText(
                 text: TextSpan(
@@ -94,9 +85,9 @@ class DescriptionText extends StatelessWidget {
                     TextSpan(
                       text: "Location\n",
                       style: Theme.of(context).textTheme.headline4?.copyWith(
-                          fontSize: 25,
-                          color: kTextColor,
-                          fontWeight: FontWeight.w600),
+                            color: kTextColor,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -105,19 +96,16 @@ class DescriptionText extends StatelessWidget {
               Text(
                 "New Cairo, Cairo",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15,
                   color: kTextColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10), // Add some space between lines
+              SizedBox(height: 10),
             ],
           ),
-        ),
-        SizedBox(height: 10), // Adjust the spacing as needed
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
+          SizedBox(height: 10),
+          Row(
             children: <Widget>[
               RichText(
                 text: TextSpan(
@@ -125,9 +113,9 @@ class DescriptionText extends StatelessWidget {
                     TextSpan(
                       text: "Date Missed\n",
                       style: Theme.of(context).textTheme.headline4?.copyWith(
-                          fontSize: 25,
-                          color: kTextColor,
-                          fontWeight: FontWeight.w600),
+                            color: kTextColor,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -136,18 +124,15 @@ class DescriptionText extends StatelessWidget {
               Text(
                 "12/05/2007",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15,
                   color: kTextColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            ], // Add more lines as needed
+            ],
           ),
-        ),
-        SizedBox(height: 10), // Adjust the spacing as needed
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
+          SizedBox(height: 10),
+          Row(
             children: <Widget>[
               RichText(
                 text: TextSpan(
@@ -155,9 +140,9 @@ class DescriptionText extends StatelessWidget {
                     TextSpan(
                       text: "Cloth Found\n",
                       style: Theme.of(context).textTheme.headline4?.copyWith(
-                          fontSize: 25,
-                          color: kTextColor,
-                          fontWeight: FontWeight.w600),
+                            color: kTextColor,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -166,15 +151,15 @@ class DescriptionText extends StatelessWidget {
               Text(
                 "Blue Jeans, Red Shirt",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 15,
                   color: kTextColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            ], // Add more lines as needed
+            ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

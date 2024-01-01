@@ -15,7 +15,8 @@ class PlusButton extends StatelessWidget {
           builder: (context) => AlertDialog(
             title: const Text(
               'Choose',
-              style: TextStyle(color: kPrimaryColor),
+              style:
+                  TextStyle(color: kPrimaryColor, fontWeight: FontWeight.bold),
             ),
             content: SizedBox(
               width: 188,
@@ -120,7 +121,7 @@ class PlusButton extends StatelessWidget {
               child: GestureDetector(
                 child: Container(
                   width: 68,
-                  height: 66,
+                  height: 63,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Color.fromRGBO(243, 248, 254, 0),

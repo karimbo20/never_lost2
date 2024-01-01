@@ -12,17 +12,6 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          // AppBar
-          AppBar(
-            leading: IconButton(
-              onPressed: () {
-                // Handle back button press
-                Navigator.of(context).pop();
-              },
-              icon: Icon(Icons.arrow_back),
-            ),
-          ),
-          // Content
           detailImage(size: size),
           DescriptionText(size: size),
         ],

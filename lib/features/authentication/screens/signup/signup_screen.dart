@@ -6,8 +6,8 @@ import 'package:never_lost/constants/text_strings.dart';
 import 'package:never_lost/features/authentication/screens/signup/widgets/signup_footer_widget.dart';
 import 'package:never_lost/features/authentication/screens/signup/widgets/signup_form_widget.dart';
 
-class SigUPScreen extends StatelessWidget {
-  const SigUPScreen({super.key});
+class SignUPScreen extends StatelessWidget {
+  const SignUPScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

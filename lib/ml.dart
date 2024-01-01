@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:never_lost/screens/home_screen.dart';
+import 'package:never_lost/screens/home/components/home_screen.dart';
 
 class ML extends StatefulWidget {
   const ML({Key? key}) : super(key: key);

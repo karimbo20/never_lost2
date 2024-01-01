@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:never_lost/constants/constansts.dart';
 import 'package:never_lost/features/authentication/screens/splash_screens/splash_screen.dart';
-import 'package:never_lost/screens/home_screen.dart';
+import 'package:never_lost/screens/home/components/home_screen.dart';
 import 'package:never_lost/utils/theme/theme.dart';
 
 void main() {

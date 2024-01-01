@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:never_lost/constants/constansts.dart';
-import 'package:never_lost/screens/missing_screen.dart';
+import 'package:never_lost/screens/missing_page/missing_screen.dart';
 
 class TitleWithMoreBtn extends StatelessWidget {
   const TitleWithMoreBtn({

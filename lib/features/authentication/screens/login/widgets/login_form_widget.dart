@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:never_lost/constants/sizes.dart';
 import 'package:never_lost/constants/text_strings.dart';
 import 'package:never_lost/features/authentication/screens/forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
-import 'package:never_lost/screens/home_screen.dart';
+import 'package:never_lost/screens/home/components/home_screen.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

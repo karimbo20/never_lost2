@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:never_lost/constants/sizes.dart';
 import 'package:never_lost/constants/text_strings.dart';
+import 'package:never_lost/screens/home/components/home_screen.dart';
 
 class SignUpFormWidget extends StatelessWidget {
   const SignUpFormWidget({
@@ -50,7 +52,7 @@ class SignUpFormWidget extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => HomeScreen()),
                 child: Text(tSignup.toUpperCase()),
               ),
             )

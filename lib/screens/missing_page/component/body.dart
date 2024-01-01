@@ -25,6 +25,7 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           AppBar(
+            backgroundColor: kPrimaryColor,
             leading: IconButton(
               onPressed: () {
                 // Handle back button press

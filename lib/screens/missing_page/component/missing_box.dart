@@ -125,7 +125,7 @@ class MissingBox extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      'Layla Hossam',
+                      'Rolla Ahmed',
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         color: Color.fromRGBO(0, 9, 41, 1),

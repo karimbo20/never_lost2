@@ -3,8 +3,6 @@ import 'package:never_lost/constants/constansts.dart';
 import 'package:never_lost/screens/family_page/components/family_box.dart';
 import 'package:never_lost/screens/family_page/components/header_and_searchbox.dart';
 
-import 'package:never_lost/screens/missing_page/component/missing_box.dart';
-
 class Body extends StatelessWidget {
   List<Map<String, dynamic>> cat = [
     {"category": "Location"},
@@ -25,6 +23,7 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           AppBar(
+            backgroundColor: kPrimaryColor,
             leading: IconButton(
               onPressed: () {
                 // Handle back button press

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:never_lost/constants/constansts.dart';
-import 'package:never_lost/screens/home_screen.dart';
+import 'package:never_lost/screens/home/components/home_screen.dart';
 
 class FamilyForm extends StatefulWidget {
   final String title;
@@ -159,7 +159,7 @@ class _FamilyFormState extends State<FamilyForm> {
                     keyboardType: TextInputType.phone,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Enter your mobile number',
+                      //hintText: 'Enter your mobile number',
                     ),
                   ),
                 ),
@@ -357,60 +357,49 @@ class _FamilyFormState extends State<FamilyForm> {
 
               // Submit and Cancel Buttons
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) => AlertDialog(
-                          title: Text(
-                            'Confirm Your Report',
-                            style: TextStyle(color: Colors.blue),
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        showDialog(
+                          context: context,
+                          builder: (context) => AlertDialog(
+                            title: Text(
+                              'Confirm Your Report',
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                            content: Text('Are you sure you want to submit?'),
+                            actions: [
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.pop(
+                                      context); // Close the alert dialog
+                                },
+                                child: Text('Cancel'),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeScreen(),
+                                    ),
+                                  );
+                                },
+                                child: Text('OK'),
+                              ),
+                            ],
                           ),
-                          content: Text('Your alert content goes here.'),
-                          actions: [
-                            TextButton(
-                              onPressed: () {
-                                Navigator.pop(
-                                    context); // Close the alert dialog
-                              },
-                              child: Text('Cancel'),
-                            ),
-                            TextButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => HomeScreen()),
-                                );
-                              },
-                              child: Text('OK'),
-                            ),
-                          ],
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.blue,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
                       ),
+                      child: Text('Submit'),
                     ),
-                    child: Text('Submit'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Add functionality for Submit button
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.red, // Change the background color
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(
-                            10.0), // Change the border radius
-                      ),
-                    ),
-                    child: Text('Cancel'),
                   ),
                 ],
               ),
